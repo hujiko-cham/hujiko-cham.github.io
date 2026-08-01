@@ -1,3 +1,28 @@
 body {
     background-image: url("images/background_sky.png");
+    text-align: center;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+
+h1 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px 0 40px 0;
+}
+
+.container {
+    background-color: #ffc1bf;
+    border: 2px solid black;
+    box-shadow: 8px 8px 0 gray;
+    max-width: 800px;
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.menu {
+    text-align: left;
+    margin: 20px;
 }
