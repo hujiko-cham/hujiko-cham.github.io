@@ -1,28 +1,50 @@
 body {
     background-image: url("images/background_sky.png");
     text-align: center;
-    padding: 0 auto;
-    margin: 0 auto;
+    font-family: "MS Gothic", sans-serif;
+}
+
+.container {
+    background-color: lightpink;
+    border: 2px solid black;
+    box-shadow: 8px 8px 0 gray;
+    width: 80%;
+    max-width: 600px;
+    padding: 30px 30px 40px 30px;
+    margin: 40px auto;
 }
 
 h1 {
     font-style: italic;
     font-weight: bold;
     font-size: 40px;
-    padding: 20px 0 40px 0;
+    padding-bottom: 20px;
 }
 
-.container {
-    background-color: #ffc1bf;
-    border: 2px solid black;
-    box-shadow: 8px 8px 0 gray;
-    max-width: 800px;
-    width: 90%;
-    padding: 20px;
-    margin: 0 auto;
-}
-
-.menu {
+h2 {
     text-align: left;
-    margin: 20px;
+    font-size: 28px;
+    border-bottom: 2px solid hotpink;
+    padding-bottom: 10px;
+}
+
+p {
+    text-align: left;
+    font-size: 18px;
+}
+
+.contents {
+    display: flex;
+}
+
+.contents-link {
+    width: 200px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.contents-description {
+    flex: 1;
+    text-align: left;
+    font-size: 18px;
 }
