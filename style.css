@@ -57,11 +57,27 @@ p {
 
 @media (max-width: 600px) {
     h1 {
-        font-size: 32px;
+        font-size: 28px;
     }
-    .contents-link {
-        width: 130px;
-        text-align: left;
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
         font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .contents-link {
+        width: 112px;
+        font-size: 16px;
+    }
+
+    .contents-description { 
+        font-size: 16px;
     }
 }
