@@ -1,5 +1,5 @@
 body {
-    background-image: url("images/background_sky.png");
+    background-image: url("images/background/background_sky.png");
     text-align: center;
     font-family: "MS Gothic", "Noto Sans", sans-serif;
 }
@@ -39,20 +39,32 @@ p {
     padding-left: 15px;
 }
 
-.contents {
-    display: flex;
+.bold {
+    font-weight: bold;
 }
 
-.contents-link {
-    width: 200px;
-    text-align: left;
-    font-size: 18px;
+.icon_s {
+    width: 16px;
+    height: auto;
 }
 
-.contents-description {
-    flex: 1;
-    text-align: left;
-    font-size: 18px;
+.icon_b {
+    width: 24px;
+    height: auto;
+}
+
+.rainbow {
+    animation: rainbow 3s linear infinite;
+}
+
+@keyframes rainbow {
+    0%   { color: red; }
+    17%  { color: orange; }
+    33%  { color: yellow; }
+    50%  { color: lime; }
+    67%  { color: cyan; }
+    83%  { color: blue; }
+    100% { color: violet; }
 }
 
 @media (max-width: 600px) {
@@ -69,15 +81,6 @@ p {
     }
 
     p {
-        font-size: 16px;
-    }
-
-    .contents-link {
-        width: 112px;
-        font-size: 16px;
-    }
-
-    .contents-description { 
         font-size: 16px;
     }
 }
