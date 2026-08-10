@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クローバー</title>
+    <link rel="stylesheet" href="clover.css">
+</head>
+<body>
+    <div id="rotate_message">
+        <h1>画面を横向きにしてね</h1>
+    </div>
+    <main id="game">
+        <div id="title_screen">
+            <h1><img src="images/three_leaf.png">クローバー<img src="images/three_leaf.png"></h1>
+            <button id="start_button">はじめる</button>
+        </div>
+        <div id="game_screen">
+            <div id="clover_area">
+            </div>
+            <div id="countdown">
+                3
+            </div>
+            <div id="start_message">
+                スタート！
+            </div>
+            <div id="status_bar">
+                <div class="counter">
+                    <img src="images/three_leaf.png" class="counter_icon">x
+                    <span id="three_leaf_count">0</span>
+                </div>
+                <div id="stopwatch">
+                    TIME:0s
+                </div>
+            </div>
+        </div>
+        <div id="clear_screen">
+            <h1>クリア！</h1>
+            <p>おめでちょー！</p>
+            <p>TIME:<span id="clear_time">0</span>s</p>
+            <p>SCORE:<span id="score">0</span></p>
+            <div id="clear_buttons">
+                <button id="retry_button">もう一度遊ぶ</button>
+                <button id="title_button">タイトルに戻る</button>
+            </div>
+        </div>
+    </main>
+    <script src="clover.js"></script>
+</body>
+</html>

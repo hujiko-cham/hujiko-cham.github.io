@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: "MS Gothic", "Noto Sans", sans-serif;
+    overflow: hidden;
+}
+
+#rotate_message {
+    width: 100%;
+    height: 100%;
+    background-color: #55e461;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#rotate_message h1 {
+    text-align: center;
+    font-size: 18px;
+}
+
+#game {
+    display: block;
+    width: 480px;
+    height: 360px;
+    box-sizing: border-box;
+    transform-origin: top left;
+}
+
+#title_screen {
+    width: 100%;
+    height: 100%;
+    background-color: #55e461;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title_screen h1 {
+    margin: 0 0 40px 0;
+    font-size: 32px;
+}
+
+#start_button {
+    min-width: 120px;
+    padding: 6px 18px;
+    background-color: #c0c0c0;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#start_button:active {
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+#game_screen {
+    display: none;
+    width: 480px;
+    height: 360px;
+    box-sizing: border-box;
+    background-color: #55e461;
+    position: absolute;
+    overflow: hidden;
+}
+
+.clover img {
+    display: block;
+    image-rendering: pixelated;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#clover_area {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 480px;
+    height: 330px;
+    overflow: hidden;
+}
+
+#countdown {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-weight: bold;
+    z-index: 100;
+}
+
+#start_message {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    font-weight: bold;
+    z-index: 100;
+}
+
+#status_bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+    background-color: #c0c0c0;
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    border-left: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.counter {
+    height: 18px;
+    margin-left: 6px;
+}
+
+.counter_icon {
+    width: 16px;
+    height: 16px;
+    padding: 0 0 5px 0;
+    image-rendering: pixelated;
+    vertical-align: middle;
+}
+
+#stopwatch {
+    height: 18px;
+    margin-left: auto;
+    margin-right: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.clover {
+    position: absolute;
+    user-select: none;
+}
+
+.clover img{
+    display: block;
+    image-rendering: pixelated;
+}
+
+#clear_screen {
+    display: none;
+    width: 480px;
+    height: 360px;
+    box-sizing: border-box;
+    background-color: #55e461;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#clear_screen h1 {
+    margin: 0 0 20px 0;
+}
+
+#clear_screen p {
+    margin: 0 0 30px 0;
+}
+
+#clear_buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#retry_button,
+#title_button {
+    min-width: 120px;
+    padding: 6px 18px;
+    background-color: #c0c0c0;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#retry_button:active,
+#title_button:active {
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+@media (max-width: 280px) {
+    #rotate_message {
+        display: flex;
+    }
+
+    #game {
+        display: none;
+    }
+}

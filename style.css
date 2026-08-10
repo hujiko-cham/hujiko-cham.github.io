@@ -1,5 +1,5 @@
 body {
-    background-image: url("images/background/background_sky.png");
+    background-image: url("images/backgrounds/background_sky.png");
     text-align: center;
     font-family: "MS Gothic", "Noto Sans", sans-serif;
 }
@@ -53,6 +53,19 @@ p {
     height: auto;
 }
 
+.thumbnail {
+    width: 50%;
+    height: 50%;
+    border: 2px solid black;
+}
+
+iframe {
+    width: 480px;
+    aspect-ratio: 4 / 3;
+    height: auto;
+    border: 2px solid black;
+}
+
 .rainbow {
     animation: rainbow 3s linear infinite;
 }
@@ -82,5 +95,11 @@ p {
 
     p {
         font-size: 16px;
+    }
+
+    iframe {
+        width: 280px;
+        aspect-ratio: 4 / 3;
+        height: auto;
     }
 }
