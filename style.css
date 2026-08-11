@@ -7,7 +7,6 @@ body {
 .container {
     background-color: lightpink;
     border: 2px solid black;
-    box-shadow: 8px 8px 0 gray;
     width: 80%;
     max-width: 600px;
     padding: 30px 30px 40px 30px;
@@ -53,17 +52,63 @@ p {
     height: auto;
 }
 
+.theme_switcher {
+    background-color: #c0c0c0;
+    border: 2px solid #000000;
+}
+
+button {
+    width: 120px;
+    padding: 6px 18px;
+    margin: 10px 10px;
+    background-color: #c0c0c0;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:active {
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+button.active {
+    border-top: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+input[type="color"] {
+    min-width: 120px;
+    height: 36px;
+    padding: 6px 18px;
+    margin: 10px 10px;
+    background-color: #c0c0c0;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    border-radius: 0;
+    cursor: pointer;
+}
+
 .thumbnail {
     width: 50%;
     height: 50%;
-    border: 2px solid black;
+    border: 2px solid #000000;
 }
 
 iframe {
     width: 480px;
     aspect-ratio: 4 / 3;
     height: auto;
-    border: 2px solid black;
+    border: 2px solid #000000;
 }
 
 .rainbow {

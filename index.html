@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ふじこのほめぱげ</title>
+    <title>ホーム・ふじこのほめぱげ</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,7 +13,7 @@
             <span class="rainbow">
                 NEW!!
             </span>
-            新しいミニゲーム「クローバー」が追加されたよ！
+            自分好みに背景や色を変えられるようになったよ！！
         </marquee>
         <h2>ようこそ！</h2>
         <p>
@@ -30,10 +30,34 @@
         <p>
             ふじこの日記です<img src="images/icons/icon_writing.gif" class="icon_s"><br><br>
         </p>
-        <h3><a href="pages/game/game_list.html"><img src="images/icons/icon_star3.gif">ミニゲーム</a><img src="images/icons/icon_new.gif"></h3>
+        <h3><a href="pages/game/game_list.html"><img src="images/icons/icon_star3.gif">ミニゲーム</a></h3>
         <p>
             ふじこのミニゲームです<img src="images/icons/icon_game.gif" class="icon_s"><br><br>
         </p>
+        <h2>テーマ設定<img src="images/icons/icon_new.gif"></h2>
+        <p>
+            背景と色を変更できます。<br><br>
+            背景は4種類。色は1677万7216色。<br><br>
+            合わせて6710万8864通り！<br><br>
+            世界にひとつのほめぱげを作ろう！<br><br>
+        </p>
+        <div class="theme_switcher">
+            <p><span class="bold">背景の設定</span></p>
+            <button id="sky_button">空</button>
+            <button id="leopard_button">レオパード</button>
+            <button id="greenwall_button">緑壁</button>
+            <button id="bricks_button">レンガ</button>
+            <p><span class="bold">色の設定</span></p>
+            <button id="pink_button">赤</button>
+            <button id="green_button">緑</button>
+            <button id="blue_button">青</button>
+            <button id="yellow_button">黄</button><br>
+            <span style="width: 120px;">カラーピッカー</span>
+            <input type="color" id="color_picker" value="lightpink"><br>
+            <button id="reset_button">デフォルト</button>
+            <button id="apply_button">適用</button>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
