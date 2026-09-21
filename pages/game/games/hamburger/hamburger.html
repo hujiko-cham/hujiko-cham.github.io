@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ハンバーガー屋</title>
+    <link rel="stylesheet" href="hamburger.css">
+</head>
+<body>
+    <div id="rotate_message">
+        <h1>画面を横向きにしてね</h1>
+    </div>
+    <main id="game">
+        <div id="title_screen">
+            <h1>ハンバーガー屋</h1>
+            <p>デモ版</p>
+            <button id="start_button">はじめる</button>
+        </div>
+        <div id="kitchen_screen">
+            <div id="top_area">
+                <div id="orders">
+                    <div class="order" id="order1"></div>
+                    <div class="order" id="order2"></div>
+                    <div class="order" id="order3"></div>
+                    <div class="order" id="order4"></div>
+                    <div class="order" id="order5"></div>
+                </div>
+                <div id="information">
+                    ステータス
+                </div>
+            </div>
+            <div id="center_area">
+                <div id="ingredients">
+                    <img src="images/top_buns.png" data-ingredient="topBun">
+                    <img src="images/tomatos.png" data-ingredient="tomato">
+                    <img src="images/patties.png" data-ingredient="patty">
+                    <img src="images/lettuces.png" data-ingredient="lettuce">
+                    <img src="images/cheeses.png" data-ingredient="cheese">
+                    <img src="images/bottom_buns.png" data-ingredient="bottomBun">
+                </div>
+                <div id="table"></div>
+                <div id="menu">
+                    <button id="serve"><img src="images/serve.png"></button>
+                    <button id="bin"><img src="images/bin.png"></button>
+                </div>
+            </div>
+            <div id="tabs">
+                <button class="tab" id="tab1">ハンバーガー</button>
+                <button class="tab" id="tab2">？？？</button>
+                <button class="tab" id="tab3">？？？</button>
+                <button class="tab" id="tab4">？？？</button>
+                <button class="tab" id="tab5">？？？</button>
+            </div>
+        </div>
+        <div id="demo_end_screen">
+            <p>デモ版はここまで<img src="/images/icons/icon_exclamation.gif"></p>
+            <p>遊んでくれてありがとう<img src="/images/icons/icon_hearts.gif"></p>
+            <div id="demo_end_buttons">
+                <button id="retry_button">もう一度遊ぶ</button>
+                <button id="title_button">タイトルに戻る</button>
+            </div>
+        </div>
+        <div id="foodcourt_screen"></div>
+    </main>
+    <script src="hamburger.js"></script>
+</body>
+</html>
