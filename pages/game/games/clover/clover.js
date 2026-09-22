@@ -1,8 +1,3 @@
-let three_leaf_count = 0;
-let game_started = false;
-let stopwatch_start_time = 0;
-let stopwatch_time = 0;
-let stopwatch_timer = null;
 const startButton = document.getElementById("start_button");
 const titleScreen = document.getElementById("title_screen");
 const gameScreen = document.getElementById("game_screen");
@@ -16,6 +11,11 @@ const clearTime = document.getElementById("clear_time");
 const scoreElement = document.getElementById("score");
 const retryButton = document.getElementById("retry_button");
 const titleButton = document.getElementById("title_button");
+let three_leaf_count = 0;
+let game_started = false;
+let stopwatch_start_time = 0;
+let stopwatch_time = 0;
+let stopwatch_timer = null;
 
 function start_countdown() {
     let count = 3;

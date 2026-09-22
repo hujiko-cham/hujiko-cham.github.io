@@ -4,6 +4,10 @@ body {
     font-family: "MS Gothic", "Noto Sans", sans-serif;
 }
 
+* {
+    font-family: inherit;
+}
+
 .container {
     background-color: lightpink;
     border: 2px solid black;
@@ -55,6 +59,10 @@ p {
 .icon_b {
     width: 24px;
     height: auto;
+}
+
+#mail {
+    width: 256px;
 }
 
 .theme_switcher {
@@ -131,6 +139,10 @@ iframe {
 }
 
 @media (max-width: 600px) {
+    #logo {
+        width: 330px;
+    }
+
     h1 {
         font-size: 28px;
     }
@@ -147,6 +159,10 @@ iframe {
         font-size: 16px;
     }
 
+    #mail {
+        width: 200px;
+    }
+
     .image {
         width: 50%;
         height: 50%;
@@ -157,6 +173,5 @@ iframe {
         width: 280px;
         aspect-ratio: 4 / 3;
         height: auto;
-        border: 1px solid #000000; 
     }
 }

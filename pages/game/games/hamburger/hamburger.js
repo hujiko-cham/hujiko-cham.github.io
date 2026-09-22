@@ -267,13 +267,12 @@ ingredients.forEach(function (ingredient) {
 
         burgerIngredients.push(ingredientName);
 
-        console.log(burgerIngredients);
-
         const image = document.createElement("img");
 
         image.src =
             "images/" + imageNames[ingredientName];
 
+        image.style.zIndex = burgerIngredients.length;
         table.appendChild(image);
 
         serve.disabled = false;
