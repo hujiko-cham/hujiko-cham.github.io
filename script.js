@@ -1,3 +1,5 @@
+const englishTexts = document.querySelectorAll(".english");
+
 const skyButton = document.getElementById("sky_button");
 const leopardButton = document.getElementById("leopard_button");
 const greenwallButton = document.getElementById("greenwall_button");
@@ -20,6 +22,40 @@ const savedColor = localStorage.getItem("color");
 let selectedBackground = savedBackground;
 let selectedColor = savedColor;
 
+englishTexts.forEach(english => {
+    const text = english.textContent;
+
+    english.textContent = "";
+
+    for (let i = 0; i < text.length; i++) {
+        const span = document.createElement("span");
+
+        span.textContent = text[i];
+        english.appendChild(span);
+    }
+
+    function playAnimation() {
+        const letters = english.querySelectorAll("span");
+
+        // まず全部消す
+        letters.forEach(letter => {
+            letter.classList.remove("show");
+        });
+
+        // 1文字ずつ表示
+        letters.forEach((letter, i) => {
+            setTimeout(() => {
+                letter.classList.add("show");
+            }, 300 + i * 150);
+        });
+    }
+
+    playAnimation();
+
+    setInterval(() => {
+        playAnimation();
+    }, 4500);
+});
 
 if (skyButton) {
     skyButton.addEventListener("click", function() {
