@@ -130,9 +130,15 @@ input[type="color"] {
     cursor: pointer;
 }
 
-.image {
+.image_l {
+    width: 60%;
+    height: auto;
+    border: 2px solid #000000;
+}
+
+.image_p {
     width: 40%;
-    height: 40%;
+    height: auto;
     border: 2px solid #000000;
 }
 
@@ -194,11 +200,17 @@ iframe {
         width: 200px;
     }
 
-    .image {
-        width: 50%;
-        height: 50%;
-        border: 1px solid #000000;
-    }
+    .image_l {
+    width: 70%;
+    height: auto;
+    border: 1px solid #000000;
+}
+
+    .image_p {
+    width: 50%;
+    height: auto;
+    border: 1px solid #000000;
+}
 
     iframe {
         width: 280px;
