@@ -1,7 +1,7 @@
 body {
     background-image: url("images/backgrounds/background_sky.png");
     text-align: center;
-    font-family: "MS Gothic", "Noto Sans", sans-serif;
+    font-family: "MS Gothic", "Hiragino Maru Gothic ProN", "Noto Sans", sans-serif;
 }
 
 * {
@@ -80,17 +80,9 @@ p {
     height: auto;
 }
 
-#mail {
-    width: 256px;
-}
-
-.theme_switcher {
-    background-color: #c0c0c0;
-    border: 2px solid #000000;
-}
-
 button {
-    width: 120px;
+    width: 360px;
+    height: 64px;
     padding: 6px 18px;
     margin: 10px 10px;
     background-color: #c0c0c0;
@@ -114,39 +106,6 @@ button.active {
     border-left: 2px solid #000000;
     border-right: 2px solid #ffffff;
     border-bottom: 2px solid #ffffff;
-}
-
-input[type="color"] {
-    min-width: 120px;
-    height: 36px;
-    padding: 6px 18px;
-    margin: 10px 10px;
-    background-color: #c0c0c0;
-    border-top: 2px solid #ffffff;
-    border-left: 2px solid #ffffff;
-    border-right: 2px solid #000000;
-    border-bottom: 2px solid #000000;
-    border-radius: 0;
-    cursor: pointer;
-}
-
-.image_l {
-    width: 60%;
-    height: auto;
-    border: 2px solid #000000;
-}
-
-.image_p {
-    width: 40%;
-    height: auto;
-    border: 2px solid #000000;
-}
-
-iframe {
-    width: 480px;
-    aspect-ratio: 4 / 3;
-    height: auto;
-    border: 2px solid #000000;
 }
 
 .rainbow {
@@ -196,25 +155,8 @@ iframe {
         font-size: 16px;
     }
 
-    #mail {
-        width: 200px;
-    }
-
-    .image_l {
-    width: 70%;
-    height: auto;
-    border: 1px solid #000000;
-}
-
-    .image_p {
-    width: 50%;
-    height: auto;
-    border: 1px solid #000000;
-}
-
-    iframe {
-        width: 280px;
-        aspect-ratio: 4 / 3;
-        height: auto;
+    .button {
+        width: 256px;
+        height: 64px;
     }
 }
